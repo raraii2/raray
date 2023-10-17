@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>puts, surpresa</title>
+    <style>
+        body {
+            background-image: url('GATINHA.png');
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 36px;
+        }
+
+        #conteudo {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .foto-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .foto {
+            position: relative;
+            width: 300px;
+            margin: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .foto img {
+            display: block;
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+
+        .legenda {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            font-family: 'cursive', sans-serif;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .foto-container .foto:hover .legenda {
+            opacity: 1;
+        }
+
+        #botao {
+            background-color: #fff;
+            color: #fc87f7;
+            padding: 10px 20px;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Espero que fique feliz</h1>
+    <button id="botao" onclick="iniciarConteudo()">Eiii, clica aqui</button>
+
+    <div id="conteudo">
+        <audio id="musica" loop>
+            <source src="a.mp3" type="audio/mpeg">
+            Seu navegador não suporta áudio.
+        </audio>
+        <div class="foto-container">
+            <div class="foto">
+                <img src="a gente dormindo juntinhas.jpg" alt="Imagem 1">
+                <div class="legenda">a gente dormindo juntinhas, bem fofas 😴</div>
+            </div>
+            <div class="foto">
+                <img src="maisss beijinhosss.gif" alt="Imagem 2">
+                <div class="legenda"> muitooossss beijinhos</div>
+            </div>
+            <div class="foto">
+                <img src="vc me enchendo de beijinhos.gif" alt="Imagem 3">
+                <div class="legenda">vc pulando cheia de tesao em mim kkkkkk</div>
+            </div> 
+            <div class="foto">
+                <img src="a gente vendo filme juntinhas.jpg" alt="Imagem 4">
+                <div class="legenda">filinho com voce nunca? pra gente ficar assim</div>
+            </div> 
+            <div class="foto">
+                <img src="vc me deixa assim.jpg" alt="Imagem 5">
+                <div class="legenda">fico toda tchubiraudaumdaum</div>
+            </div> 
+            <div class="foto">
+                <img src="vc enchendo meu saco.jpg" alt="Imagem 6">
+                <div class="legenda">a gente quando eu ficar querendo escutar e vc ficar enchendo meu saco</div>
+            </div> 
+            <div class="foto">
+                <img src="eu chorando muito.jpg" alt="Imagem 6">
+                <div class="legenda">eu chorando quando voce não esta presente e pensando em voce</div>
+            </div>  
+            <div class="foto">
+                <img src="gato.jpg" alt="Imagem 7">
+                <div class="legenda"> não deixa NADA no mundo apagar seu brilho. </div>
+            </div>  
+            <div class="foto">
+                <img src="aaa.jpg" alt="Imagem 8">
+                <div class="legenda"> Porque voce ainda tem muito o que brilhar no mundo.</div>
+            </div> 
+            <div class="foto">
+                <img src="moti.jpg" alt="Imagem 9">
+                <div class="legenda"> SEJA VOCE A SUA PROPRIA MOTIVAÇÃO, minha gata</div>
+            </div>  
+            <div class="foto">
+                <img src="mostrando para vc o quão valor vc tem.jpg" alt="Imagem 10">
+                <div class="legenda"> Mostrando o quanto de valor vc tem e que não pode deixar a coroa cair!! </div>
+            </div>  
+            <div class="foto">
+                <img src="vamos assistir um filme, vc depois.jpg" alt="Imagem 11">
+                <div class="legenda"> vamos ver filme amor? vamoss, vc dois segundos depois </div>
+            </div> 
+            <div class="foto">
+                <img src="vc capotando do meu lado.jpg" alt="Imagem 12">
+                <div class="legenda"> vc capotando em qualquer oportunidade do meu lado</div>
+            </div>  
+            <div class="foto">
+                <img src="subindo capas juntas.jpg" alt="Imagem 13">
+                <div class="legenda"> a gente jogando aquele free fireee juntas e subindo muitos capas </div>
+            </div>
+            <div class="foto">
+                <img src="quando estivermos juntas unica cal que vamos.jpg" alt="Imagem 14">
+                <div class="legenda"> Quando estivermos juntas unica call que vamos fazer </div>
+            </div>  
+            <div class="foto">
+                <img src="vc me esperando.jpg" alt="Imagem 15">
+                <div class="legenda"> vc me esperando toda linda </div> 
+            </div> 
+            <div class="foto">
+                <img src="vc nao vem me ver nao.jpg" alt="Imagem 16">
+                <div class="legenda"> vc não vem me ver não? </div> 
+            </div> 
+            <div class="foto">
+                <img src="eu e vc na minha moto akkaakkaka que moto.gif" alt="Imagem 17">
+                <div class="legenda"> eu e voce na minha moto kakakakak(quando estavamos deitada naquela manha e eu falei da minha moto, mas que moto??) </div>
+            </div> 
+            <div class="foto">
+                <img src="vc me levando para o mal caminho.gif" alt="Imagem 18">
+                <div class="legenda">vc me levando pro mal caminho e eu amando estar ao seu lado </div>
+            </div>  
+            <div class="foto">
+                <img src="a gente quando for na praia.jpg" alt="Imagem 19">
+                <div class="legenda">quando formos na praia, obvio que vc me odeia e vai querer me enterrar kkkkkkkkkkk</div>
+            </div>  
+            <div class="foto">
+                <img src="video game junats as duas se matando por ser competitiva.jpg" alt="Imagem 20">
+                <div class="legenda"> jogando video game juntas  e as duas bravas por ser muito competitivas</div>
+            </div> 
+            <div class="foto">
+                <img src="a gente tirando fotos juntas.jpg" alt="Imagem 21">
+                <div class="legenda">a gente tirando fotos juntas bem fofas</div>
+            </div> 
+            <div class="foto">
+                <img src="banho.gif" alt="Imagem 22">
+                <div class="legenda">eu levando voce para tomar banho</div>
+            </div>  
+            <div class="foto">
+                <img src="vc querendo me matar pq vc é surtada e maluca tudo.gif" alt="Imagem 23">
+                <div class="legenda"> Vc querendo me matar pq vc é surtada, maluca, toxica tudo kkkkkkk </div>
+            </div> 
+            <div class="foto">
+                <img src="ficando gordas.gif" alt="Imagem 24">
+                <div class="legenda"> eu e vc futuramente cheia de barriguinha</div>
+            </div> 
+            <div class="foto">
+                <img src="dormindo.jpg" alt="Imagem 25">
+                <div class="legenda"> vem dormir assim comigo vem?? minha mão no seu peito e bem juntinhas</div>
+            </div> 
+        </div>
+    </div>
+
+    <script>
+       function iniciarConteudo() {
+            var conteudo = document.getElementById("conteudo");
+            var botao = document.getElementById("botao");
+            var musica = document.getElementById("musica");
+
+            conteudo.style.display = "block";
+            botao.style.display = "none";
+            musica.play();
+        }
+    </script>
+</body>
+</html>
+
+
